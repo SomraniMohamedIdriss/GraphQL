@@ -86,4 +86,7 @@ public class UniteEnseignementBusiness {
     public void setUnitesEnseignement(List<UniteEnseignement> unitesEnseignement) {
         this.unitesEnseignement = unitesEnseignement;
     }
+
+
+
 }
