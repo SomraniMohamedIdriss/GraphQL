@@ -6,7 +6,7 @@ import business.UniteEnseignementBusiness;
 // Import the GraphQL library class used to define the root of GraphQL mutations
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
 
-// Import the entity class representing a Teaching Unit (Unité d’Enseignement)
+// Import the entity class representing a Teaching Unit (Unité d'Enseignement)
 import entities.UniteEnseignement;
 
 /**
@@ -30,7 +30,7 @@ public class MutationResolver implements GraphQLRootResolver {
     /**
      * GraphQL Mutation: addUniteEnseignement
      *
-     * This method allows clients to add a new "Unité d’Enseignement" to the system.
+     * This method allows clients to add a new "Unité d'Enseignement" to the system.
      *
      * When a GraphQL mutation like the following is executed:
      *
@@ -54,10 +54,6 @@ public class MutationResolver implements GraphQLRootResolver {
         // The helper handles the actual persistence or logic of adding the entity
         return helper.addUniteEnseignement(ue);
     }
-
-
-
-
 
     public boolean updateUniteEnseignement(int code, String domaine, String responsable, int credits, int semestre) {
         UniteEnseignement ue = new UniteEnseignement(code, domaine, responsable, credits, semestre);
